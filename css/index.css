@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 头部提示栏 */
+header {
+    width: 100%;
+    height: 45px;
+    background-color: #333333;
+}
+
+
+header ul li {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+}
+
+header ul li:nth-child(1) {
+    width: 8%;
+
+}
+
+header ul li:nth-child(1) img {
+    vertical-align: middle;
+    margin-top: -4px;
+    width: 20px;
+    height: 20px;
+}
+
+header ul li:nth-child(2) {
+    width: 10%;
+}
+
+header ul li:nth-child(2) img {
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+header ul li:nth-child(3) {
+    width: 57%;
+    color: #fff;
+}
+
+header ul li:nth-child(4) {
+    width: 25%;
+    background-color: #f63515;
+    color: #fff;
+}
+
+/* 搜索框 */
+.searchbox {
+    /* 不能给高度，否则轮播图往下流 */
+    /* 下滑时搜索框会固定在顶部 */
+    position: sticky;
+    top: 0;
+    /* 父子元素防止塌陷 */
+    overflow: hidden;
+    line-height: 44px;
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    z-index: 2;
+    background-color: #c82519;
+    /* 宽度介于640-320之间 */
+}
+
+.search_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+}
+
+.search_left::after {
+    content: '';
+    /* 为元素默认行内元素 */
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/菜单栏.png) no-repeat;
+    background-size: 20px 18px;
+    margin: 14px 0 0 15px;
+}
+
+.searchbox .search {
+    height: 30px;
+    line-height: 30px;
+    /* 不能给宽度，默认和父亲一样宽，但是父亲是块级元素
+    会沾满一整行所以该不行不受定位影响沾满整行 */
+    margin: 8px 50px;
+    border-radius: 20px;
+
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+/* search内容 */
+/* JD的logo */
+.searchbox .search .icon_JD {
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    left: 14px;
+    top: 8px;
+    background: url(../img/JD.png) no-repeat;
+    background-size: 20px 15px;
+}
+
+/* 竖线 */
+.icon_JD::after {
+    content: '';
+    height: 15px;
+    width: 1px;
+    background-color: #dddddd;
+    position: absolute;
+    top: 0;
+    left: 27px;
+}
+
+/* 放大镜 */
+.magnifier {
+    width: 18px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    left: 51px;
+    background: url(../img/搜索框精灵图标.png) no-repeat -81px 0;
+    /* 这里精灵图也要缩2倍，并且大小不能用百分比 */
+    background-size: 200px;
+}
+
+/* 输入框 */
+.searchbox .search input {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    /* 和定位的方向有关系，因为是以右所以左边会伸缩 */
+    width: calc(100% - 95px);
+    outline: none;
+    border: 0;
+    background-color: #f7f7f7;
+}
+
+/* 登陆 */
+.search_right {
+    position: absolute;
+    width: 40px;
+    height: 44px;
+    top: 0;
+    right: 0;
+    color: #fff;
+}
+
+/* 轮播图 */
+.lunbo {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.lunbo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.lunbo_bg {
+    width: 100%;
+    height: 168px;
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+    background-color: #c82519;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+.lunbo .banr {
+    width: calc(100% - 24px);
+    height: calc(100% - 40px);
+    margin: 0 auto;
+    margin-top: -47px;
+    transform: translateY(30%);
+}
+
+/* 菜单模块 */
+.menu {
+    margin-top: 20%;
+    width: 100%;
+    height: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.menu a img {
+    width: 60%;
+
+}
+
+/* 清除菜单模块浮动 */
+.menu::after,
+.menu::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 秒杀模块 */
+.seckill {
+    width: calc(95%);
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 秒杀头部 */
+.seckill_header {
+    width: 100%;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    background: url(../upload/seckill_bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.seckill_header_left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+
+.seckill_header_right {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+
+.seckill_header_right a {
+    color: #f23030;
+}
+
+.seckill_header_right i {
+    display: inline-block;
+    width: .8rem;
+    height: .8rem;
+    vertical-align: middle;
+    background: url(../upload/youjiantou.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 秒杀身体 */
+.seckill_body {
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* 身体每个小商品 */
+.seckill_body ul li {
+    width: calc(100%/6.209);
+    text-align: center;
+    margin-left: 2px;
+}
+
+.seckill_body ul li img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.seckill_body ul li p {
+    font-size: 16px;
+    color: #f2270c;
+    font-weight: 600;
+}
+
+/* 清除第一个盒子外左间距 */
+.seckill_body ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+/* 清除秒杀身体浮动 */
+.seckill_body::before,
+.seckill_body::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 商品列表 */
+.commoditylist {
+    width: calc(95%);
+    margin: 0 auto;
+}
+
+/* 清除商品浮动 */
+.commoditylist::before,
+.commoditylist::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.commoditylist .floor {
+    float: left;
+    /* 右float了就默认行内块元素不用display转行内块了 */
+    width: 49%;
+    box-sizing: border-box;
+    margin-right: 2%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* 每第二个右外边距为0 */
+.commoditylist a:nth-child(2n) {
+    margin-right: 0;
+}
+
+/* 商品图 */
+.commoditylist a img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.commoditylist .commoditylist_text {
+    padding: 2px 5px;
+}
+
+/* 商品描述信息 */
+.commoditylist a p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* 价格 */
+.commoditylist .commoditylist_text span {
+    display: inline-block;
+    margin: 2px auto;
+    color: #ff4142;
+    font-size: 1rem;
+}
+
+/* 秒杀图 */
+.commoditylist_text .miaoshatu {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1rem;
+    vertical-align: middle;
+    background-color: skyblue;
+    margin: 0 .5rem;
+    background: url(../upload/miaoshatu.png) no-repeat;
+    background-size: 100%;
+}
+
+/* 好评率，评价，媒体 */
+.evaluate {
+    width: 100%;
+    height: 1rem;
+    padding: 0 5px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+
+}
+
+.evaluate::before,
+.evaluate::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.evaluate .haoping {
+    float: left;
+    color: #999999;
+}
+
+.evaluate .haoping img {
+    height: 1rem;
+    border-radius: 0;
+}
+
+.evaluate .kanxiangsi {
+    float: right;
+    color: #262626;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    z-index: 1px;
+}

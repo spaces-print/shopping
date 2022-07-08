@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口标签 user-scalable=no,maximum-scale=1.0,minimum-scale=1.0 
+        禁止用户缩放，网页最大最小显示倍数1
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <!-- 引入初始化文件 -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- 引入css样式 -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+    <style>
+        body {
+            /* 初始化body */
+            width: 100%;
+            margin: 0 auto;
+            min-width: 320px;
+            max-width: 640px;
+            background: #fff;
+            font-family: -apple-system, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <header>
+        <ul>
+            <li><img src="img/X.png" alt=""></li>
+            <li><img src="img/logo.png" alt=""></li>
+            <li>打开京东App，购物更轻松</li>
+            <li>立即打开</li>
+        </ul>
+    </header>
+    <!-- 搜索框 -->
+    <div class="searchbox">
+        <div class="search_left"></div>
+        <div class="search">
+            <div class="icon_JD"></div>
+            <div class="magnifier"></div>
+            <input type="text" placeholder="骗子商城">
+        </div>
+        <div class="search_right">登录</div>
+    </div>
+</body>
+<!-- 轮播图 -->
+<div class="lunbo">
+    <div class="lunbo_bg"></div>
+    <div class="banr">
+        <img src="upload/cat2.jpg" alt="">
+    </div>
+</div>
+
+<!-- 导航块 -->
+<div class="menu">
+    <a href=""><img src="img/menu1.png" alt="">
+        <p>京东超市</p>
+    </a>
+    <a href=""><img src="img/menu2.png" alt="">
+        <p>京东到家</p>
+    </a>
+    <a href=""><img src="img/menu3.png" alt="">
+        <p>数码电器</p>
+    </a>
+    <a href=""><img src="img/menu4.png" alt="">
+        <p>水果蔬菜</p>
+    </a>
+    <a href=""><img src="img/menu5.png" alt="">
+        <p>手机充值</p>
+    </a>
+    <a href=""><img src="img/menu5.png" alt="">
+        <p>手机充值</p>
+    </a>
+    <a href=""><img src="img/menu4.png" alt="">
+        <p>水果蔬菜</p>
+    </a>
+    <a href=""><img src="img/menu3.png" alt="">
+        <p>数码电器</p>
+    </a>
+    <a href=""><img src="img/menu2.png" alt="">
+        <p>京东到家</p>
+    </a>
+    <a href=""><img src="img/menu1.png" alt="">
+        <p>京东超市</p>
+    </a>
+</div>
+<!-- 秒杀模块 -->
+<div class="seckill">
+    <!-- 秒杀头部 -->
+    <div class="seckill_header">
+        <div class="seckill_header_left">
+            <h3>京东秒杀</h3>
+        </div>
+        <div class="seckill_header_right">
+            <a href="">爆款轮番炒</a>
+            <i></i>
+        </div>
+    </div>
+    <!-- 秒杀身体 -->
+    <div class="seckill_body">
+        <ul>
+            <li><img src="upload/cat1.jpg" alt="">
+                <p>¥666</p>
+            </li>
+            <li><img src="upload/cat2.jpg" alt="">
+                <p>¥888</p>
+            </li>
+            <li><img src="upload/cat1.jpg" alt="">
+                <p>¥251</p>
+            </li>
+            <li><img src="upload/cat2.jpg" alt="">
+                <p>¥249</p>
+            </li>
+            <li><img src="upload/cat1.jpg" alt="">
+                <p>¥120</p>
+            </li>
+            <li><img src="upload/cat2.jpg" alt="">
+                <p>¥110</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 商品列表 -->
+<div class="commoditylist">
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat1.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>可爱猫猫正在酝酿,下一秒缺被吓的不轻.这是一个悲剧猫猫的开始</p>
+            <!-- 价格 -->
+            <span>¥321</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/JDwuliutu.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat2.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>突然被下了一大跳的猫,很值钱.无价之宝的东西开始拍卖了</p>
+            <!-- 价格 -->
+            <span>¥不值钱</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                500+条评论
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat4.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>汤姆猫还是假老练?看我眼神你就知道了.</p>
+            <!-- 价格 -->
+            <span>¥1</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                3000+好评
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat3.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>摆烂摆烂,不干了!!快给我小鱼干!!</p>
+            <!-- 价格 -->
+            <span>¥123</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                200+好评
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat6.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>睡醒的猫猫,四仰八叉,限定姿势,限时出售,买到就是赚到</p>
+            <!-- 价格 -->
+            <span>¥0.5</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/JDwuliutu.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat5.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>专门抓风车车的假老练,认真且转一,不买就是吃亏很值</p>
+            <!-- 价格 -->
+            <span>¥123</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                450+条评论
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat7.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>看我可爱吗,可爱快点买走我!!!!!</p>
+            <!-- 价格 -->
+            <span>¥500</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/自营.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat8.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>两腿一翘,与世无争,摆烂猫特价</p>
+            <!-- 价格 -->
+            <span>¥不值钱</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/JDwuliutu.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat9.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>可爱小清新假老练大屁股</p>
+            <!-- 价格 -->
+            <span>¥500万</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/自营.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 复制---------------------------- -->
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat10.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>一个会偷看,会东躲西藏的小猫猫,自营销售</p>
+            <!-- 价格 -->
+            <span>¥0.1</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/自营.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat11.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>憔悴假老练+供氧盒特价特价!!!</p>
+            <!-- 价格 -->
+            <span>¥120</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/JDwuliutu.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat12.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>可爱偷看版猫猫,你只得拥有,还在等什么,心动不如行动,快快快!!!!</p>
+            <!-- 价格 -->
+            <span>¥110</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/自营.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat13.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>其他都是渣猫,这个猫会洗衣做饭还会自己回家,非常nice</p>
+            <!-- 价格 -->
+            <span>¥119</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/自营.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat14.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>可爱猫猫!!只会在窝里,非常乖巧</p>
+            <!-- 价格 -->
+            <span>¥911</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/JDwuliutu.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+
+    <!-- 商品 -->
+    <a href="" class="floor">
+        <!-- 商品图片 -->
+        <img src="upload/cat2.jpg" alt="">
+        <!-- 图片底部文字 -->
+        <div class="commoditylist_text">
+            <!-- 商品描述 -->
+            <p>一如既往的憨憨.........</p>
+            <!-- 价格 -->
+            <span>¥0</span><i class="miaoshatu"></i>
+        </div>
+        <!-- 评价，好评率，媒体 -->
+        <div class="evaluate">
+            <div class="haoping">
+                <!-- 此处可以修改成：评论次数，好评率，什么媒体 -->
+                <img src="upload/自营.png" alt="">
+            </div>
+            <div class="kanxiangsi">看相似</div>
+        </div>
+    </a>
+</div>
+
+</html>
